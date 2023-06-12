@@ -112,7 +112,7 @@ const Attendance =() =>
         };
     
         // Define mysql localhost url
-        const URL = 'http://localhost:5000/attendance';
+        const URL = 'http://localhost:5000/fetch';
         // console.log(loginRequestOptions)
         try {
         const resp = await fetch(URL, loginRequestOptions);
@@ -143,7 +143,7 @@ const Attendance =() =>
           body: JSON.stringify({ query: loginQuery}),
         };
     
-        const URL = 'http://localhost:5000/attendance';
+        const URL = 'http://localhost:5000/admin';
         try {
         const resp = await fetch(URL, loginRequestOptions)
         .then(response => response.json())
