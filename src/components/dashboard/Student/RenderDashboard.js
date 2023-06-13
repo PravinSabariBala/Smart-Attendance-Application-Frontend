@@ -4,6 +4,7 @@ import ViewAttendance from './ViewAttendance';
 // import ViewProfile from '/ViewProfile';
 import EnterAttendance from './EnterAttendance';
 import ApplyOD from './ApplyOd';
+import Reports from './Reports';
 
 function RenderDashboard({currentPage}) {
 
@@ -22,6 +23,11 @@ function RenderDashboard({currentPage}) {
   else if (currentPage === "Apply OD") {
     return <>
       <ApplyOD />
+    </>
+  }
+  else if (currentPage === "Attendance Reports") {
+    return <>
+      <Reports />
     </>
   }
 }

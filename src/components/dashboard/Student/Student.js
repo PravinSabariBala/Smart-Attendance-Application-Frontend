@@ -78,6 +78,16 @@ const Student = ({}) => {
                 >
                 Apply OD
               </Button>
+              
+                            
+              <Button onClick={(event) => {
+                setCurrentPage("Attendance Reports");
+                setODApplicationSelected(event.currentTarget);
+                console.log(currentPage)}} 
+                sx={{ my: 2, color: 'white !important', display: 'flex' }}
+                >
+                Attendance Reports
+              </Button>
             </Box>
 
             <Box sx={{ flexGrow: 0 }}>
