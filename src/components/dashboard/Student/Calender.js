@@ -28,7 +28,6 @@ function Calender() {
     const [rows, setRows] = useState([]);
     const [dates, setDates] = useState(new Map());
   
-    // Fetch data from MySQL on component mount
     // useEffect(() => {
     //   fetch("/api/data")
     //     .then((response) => response.json())
@@ -37,7 +36,6 @@ function Calender() {
     //     });
     // }, []);
   
-    // Fetch data for calendar on component mount
     // useEffect(() => {
     //   fetch("/api/calendar")
     //     .then((response) => response.json())
